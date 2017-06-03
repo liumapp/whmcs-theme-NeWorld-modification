@@ -1,0 +1,190 @@
+/**
+ * Invoice Style Sheet
+ *
+ * Contains styling specific to the view invoice page.
+ *
+ * @project   WHMCS
+ * @version   1.0
+ * @author    WHMCS Limited <development@whmcs.com>
+ * @copyright Copyright (c) WHMCS Limited 2005-2015
+ * @license   http://www.whmcs.com/license/
+ * @link      http://www.whmcs.com/
+ */
+:focus {
+	outline: none;
+}
+body {
+	font-size: 14px;
+	font-family: "proxima-nova", Verdana, Tahoma, sans-serif;
+    background-color: #ECEFF4;
+}
+.container {
+    margin: 75px auto;
+    max-width: 850px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.logo {
+	color: #131313;
+	margin-top: 0;
+	font-weight: 300;
+    font-family: Raleway, sans-serif;
+}
+.header {
+	background-color: #F4F5F9;
+	padding: 45px;
+	border-radius: 6px 6px 0 0;
+}
+.footer {
+	background-color: #F4F5F9;
+	padding: 45px;
+	border-radius: 0 0 6px 6px;
+}
+p.black {
+	font-weight: 300;
+    font-family: Raleway, sans-serif;
+    text-transform: uppercase;
+	font-size: 25px;
+}
+p.gery {
+	color: #96999e;
+	margin-bottom: 0;
+}
+.mrb10 {
+    margin-bottom: 10px;
+    display: block;
+}
+.gray {
+	color: #BBB;
+}
+.green {
+	color: #33c46f;
+}
+.font16 {
+	font-size: 16px;
+}
+.font20 {
+	font-size: 20px;
+}
+.fontweight300 {
+	font-weight: 300;
+}
+.invoice-total {
+	padding: 45px;
+}
+.invoice-total span {
+	min-width: 120px;
+	display: inline-block;
+}
+.table-responsive {
+	border: 0 none;
+	margin-bottom: 0;
+}
+.contets .table {
+	border: 0 none;
+	margin-bottom: 0;
+}
+.contets .table>tbody>tr>td {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: none;
+	border-bottom: 1px solid #F9F9F9;
+}
+.contets .table>tbody>tr>td:first-child,
+.transactions-container .table>tbody>tr>td:first-child,
+.transactions-container .table>thead>tr>td:first-child {
+	padding-left: 45px;
+}
+.contets .table>tbody>tr>td:last-child,
+.transactions-container .table>tbody>tr>td:last-child,
+.transactions-container .table>thead>tr>td:last-child {
+	padding-right: 45px;
+}
+.transactions-container .table tr td {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: none;
+	border-bottom: 1px solid #F9F9F9;
+}
+.transactions-container .table tr:last-child td {
+	border-bottom: 0 none;
+}
+.transactions-container .table>thead>tr>td {
+	background-color: #F9F9F9;
+}
+
+/* Container Responsive Behaviour */
+
+.invoice-container {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.05);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+	.header,
+	.footer,
+	.invoice-total {
+		padding: 30px 20px;
+	}
+	.container {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.contets .table>tbody>tr>td:first-child, .transactions-container .table>tbody>tr>td:first-child, .transactions-container .table>thead>tr>td:first-child {
+		padding-left: 20px;
+	}
+	.contets .table>tbody>tr>td:last-child, .transactions-container .table>tbody>tr>td:last-child, .transactions-container .table>thead>tr>td:last-child {
+		padding-right: 20px;
+	}
+}
+
+/* Invoice Status Formatting */
+
+.invoice-container .invoice-status {
+    margin: 20px 0 0 0;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Invoice Status Colors */
+
+.draft {
+    color: #888;
+}
+.unpaid {
+    color: #cc0000;
+}
+.paid {
+    color: #779500;
+}
+.refunded {
+    color: #224488;
+}
+.cancelled {
+    color: #888;
+}
+.collections {
+    color: #ffcc00;
+}
+
+/* Payment Button Formatting */
+
+.invoice-container .payment-btn-container {
+    margin-top: 5px;
+    text-align: center;
+}
+.invoice-container .payment-btn-container table {
+    margin: 0 auto;
+}
+
+/* Invoice Items Table Formatting */
+
+.invoice-container td.total-row {
+    background-color: #f8f8f8;
+}
+.invoice-container td.no-line {
+    border: 0;
+}
