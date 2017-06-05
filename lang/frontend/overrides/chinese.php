@@ -31,3 +31,6 @@ $_LANG['sliderdesc'] = "响应式网站设计，支持各种设备访问，给�
 $_LANG['whatis'] = "What is NeWorld";
 $_LANG['whatisdesc'] = "全站响应式设计，完全符合 W3C 标准更注重用户体验，基于 CSS3、HTML5 制作，全新的用户体验！作品覆盖各大平台让您的业务开展的更顺利！";
 $_LANG['homeannouncements'] = "公告通知：";
+
+
+///// Modification

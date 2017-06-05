@@ -14,7 +14,7 @@
 						</span>
 					</label>
 				</button>
-				
+
 	            <div class="navbar-header">
 	                <a class="navbar-brand" href="{$systemurl}">{$companyname}</a>
 	            </div><!-- Collect the nav links, forms, and other content for toggling -->
@@ -81,15 +81,35 @@
 	                </ul>
 	            </div><!-- /.navbar-collapse -->
 	    	</nav>
+
 	{if $templatefile == 'homepage'}
 	    	<div class="home-slider space3x">
 		    	<div class="col-sm-6 col-md-5">
 		    		<h2 class="wow fadeInDown">See Our Simple Pricing,<br/>No Bandwidth Overages!</h2>
 		    		<p class="wow fadeInDown">Form early to enterprise, we've got you covered Starts with 14 days free. Annual payment earns you two months free!</p>
-		    		<a href="#" class="btn btn-success">{$LANG.getstarted}</a>
 		    	</div>
+				<div class="col-sm-9 col-md-8">
+					<form method="post" action="domainchecker.php">
+						<div class="row">
+							<div class="col-md-10  col-sm-10">
+								<div class="input-group input-group-lg">
+									<input type="text" class="form-control" name="domain" placeholder="{$LANG.exampledomain}" autocapitalize="none" />
+									<span class="input-group-btn">
+										{if $registerdomainenabled}
+											<input type="submit" class="btn btn-warning" value="{$LANG.search}" />
+                                        {/if}
+                                        {if $transferdomainenabled}
+											<input type="submit" name="transfer" class="btn btn-info" value="{$LANG.domainstransfer}" />
+                                        {/if}
+                                	</span>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
 	    	</div>
 	{/if}
+
 	    </div><!-- /.container -->
 	{if $templatefile == 'homepage'}</div>{/if}
 </header>
