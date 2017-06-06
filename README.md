@@ -7,7 +7,7 @@ A whmcs theme , which source coming from NeWorld .
 
 * 将rootPath下的文件拷贝到whmcs的根目录下
 
-* 将orderforms下面的文件夹拷贝到whmcs/template/orderforms目录下
+* 备份您的/templates/orderforms/standard_cart目录，然后将orderforms/下面的NeWorld下的所有文件复制到standard_cart下面
 
 * 将lang目录下的admin和frontend两个文件夹的语言包，分别拷贝到系统的后台和前台语言包内
 
