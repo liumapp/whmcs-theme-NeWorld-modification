@@ -27,19 +27,19 @@
 	                    <li {if $templatefile == 'pricing'} class="active"{/if}>
 	                    	<a href="{$systemurl}pricing.php">{$LANG.pricing}</a>
 	                    </li>
-	                    <li class="dropdown{if $templatefile == 'vps'} active{/if}">
-	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$LANG.hosting} <span class="caret"></span></a>
-	
-	                        <ul class="dropdown-menu">
-	                            <li><a href="/shadowsocks/"><i class="fa fa-paper-plane"></i> Shadowsocks</a></li>
-	
-	                            <li><a href="/sharehosting/"><i class="fa fa-group"></i> Shared Hosting</a></li>
-	
-	                            <li><a href="{$systemurl}vps.php"><i class="fa fa-cloud"></i> VPS Hosting</a></li>
-	
-	                            <li><a href="/dedicated/"><i class="fa fa-server"></i> Dedicated Hosting</a></li>
-	                        </ul>
-	                    </li>
+	                    {*<li class="dropdown{if $templatefile == 'vps'} active{/if}">*}
+	                        {*<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{$LANG.hosting} <span class="caret"></span></a>*}
+	{**}
+	                        {*<ul class="dropdown-menu">*}
+	                            {*<li><a href="/shadowsocks/"><i class="fa fa-paper-plane"></i> Shadowsocks</a></li>*}
+	{**}
+	                            {*<li><a href="/sharehosting/"><i class="fa fa-group"></i> Shared Hosting</a></li>*}
+	{**}
+	                            {*<li><a href="{$systemurl}vps.php"><i class="fa fa-cloud"></i> VPS Hosting</a></li>*}
+	{**}
+	                            {*<li><a href="/dedicated/"><i class="fa fa-server"></i> Dedicated Hosting</a></li>*}
+	                        {*</ul>*}
+	                    {*</li>*}
 	                    <li {if $templatefile == 'contact'} class="active"{/if}>
 	                    	<a href="{$systemurl}contact.php">{$LANG.homecontact}</a>
 	                    </li>
