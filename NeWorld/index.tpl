@@ -202,7 +202,7 @@
 		</div>
 		<div class="empty_space" style="height: 30px"></div>
 		<div class="main">
-			
+
 		</div>
 	</div>
 </section>
@@ -212,47 +212,19 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1 text-center">
 				<h2 class="title-head">Questions and answers</h2>
-				<p class="desc">Our support team work hard to make your life simplier. Feel free to <a href="{$WEB_ROOT}/contact/">{$LANG.contacttitle}</a></p>
+				<p class="desc">Our support team work hard to make your life simplier. Feel free to <a href="{$WEB_ROOT}/contact.php">{$LANG.contacttitle}</a></p>
 			</div>
 		</div>
 		<div class="empty_space" style="height: 30px"></div>
 		<div class="row">
-			<div class="col-sm-6">
-				<div class="main wow fadeInLeft">
-					<h4 class="title-head">How does demo works?</h4>
-					<p>How well did your video capture and hold your audience's attention? Engagement graphs showyou where prople drop off andwhich content is best.</p>
+			{section name=sec1 loop=$qa}
+				<div class="col-sm-6">
+					<div class="main wow fadeInLeft">
+						<h4 class="title-head">{$qa[sec1]->title}</h4>
+						<p>{$qa[sec1]->article}</p>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="main wow fadeInRight">
-					<h4 class="title-head">How does demo works?</h4>
-					<p>How well did your video capture and hold your audience's attention? Engagement graphs showyou where prople drop off andwhich content is best.</p>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="main wow fadeInLeft">
-					<h4 class="title-head">How does demo works?</h4>
-					<p>How well did your video capture and hold your audience's attention? Engagement graphs showyou where prople drop off andwhich content is best.</p>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="main wow fadeInRight">
-					<h4 class="title-head">How does demo works?</h4>
-					<p>How well did your video capture and hold your audience's attention? Engagement graphs showyou where prople drop off andwhich content is best.</p>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="main wow fadeInLeft">
-					<h4 class="title-head">How does demo works?</h4>
-					<p>How well did your video capture and hold your audience's attention? Engagement graphs showyou where prople drop off andwhich content is best.</p>
-				</div>
-			</div>
-			<div class="col-sm-6">
-				<div class="main wow fadeInRight">
-					<h4 class="title-head">How does demo works?</h4>
-					<p>How well did your video capture and hold your audience's attention? Engagement graphs showyou where prople drop off andwhich content is best.</p>
-				</div>
-			</div>
+			{/section}
 		</div>
 	</div>
 </section>

@@ -1,8 +1,8 @@
 <section class="loginform">
 	<div class="row">
-		<div class="logincontainer col-sm-12">
+		<div class="col-sm-4 col-sm-offset-4">
 			
-			<a class="navbar-brand" href="{$WEB_ROOT}/index.php" title="{$companyname}">{$companyname}</a>
+			{*<a class="navbar-brand" href="{$WEB_ROOT}/index.php" title="{$companyname}">{$companyname}</a>*}
 			
 			<div class="login-content">
 			
@@ -15,17 +15,17 @@
 				    {elseif $ssoredirect}
 				        {include file="$template/includes/alert.tpl" type="info" msg=$LANG.sso.redirectafterlogin textcenter=true}
 				    {/if}
-			    
+
 			        <div class="form-group form-group-top">
 			            <label for="inputEmail">{$LANG.clientareaemail}</label>
 			            <input type="email" name="username" class="form-control" id="inputEmail" placeholder="{$LANG.enteremail}" autofocus>
 			        </div>
-			
+
 			        <div class="form-group">
 			            <label for="inputPassword">{$LANG.clientareapassword}</label>
 			            <input type="password" name="password" class="form-control" id="inputPassword" placeholder="{$LANG.clientareapassword}" autocomplete="off" >
 			        </div>
-			
+
 			        <div class="form-group">
 			            <label>
 			                <input type="checkbox" name="rememberme" /> {$LANG.loginrememberme}

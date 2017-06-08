@@ -677,7 +677,7 @@ footer {
 footer .navbar-brand {
     display: block;
     float: none;
-    font-size: 26px;
+    font-size: 20px;
     padding: 0;
     height: auto;
     margin-bottom: 20px;
@@ -1991,7 +1991,7 @@ svg #stripe path {
     border-bottom: 1px solid #333c48;
 }
 .left-menu .header .navbar-brand {
-    width: 75px;
+    width: 80%;
     height: 70px;
     background-size: 75px auto;
     position: relative;
@@ -2000,6 +2000,7 @@ svg #stripe path {
     padding: 24px 0;
     color: #FFF;
     font-family: Raleway, Verdana, Tahoma, sans-serif;
+    font-size:0.8em;
 }
 .left-menu .logout {
     position: absolute;

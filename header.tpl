@@ -60,7 +60,7 @@
 {include file="$template/includes/verifyemail.tpl"}
 
 {if $formaction != 'dologin.php' && $filename != 'logout' && $filename != 'pwreset' && $templatefile != 'homepage' && $templatefile != 'vps' && $templatefile != 'features' && $templatefile != 'pricing' && $filename != "cart"}
-	{if $templatefile != 'clientareahome' || $templatefile != 'downloads' || $templatefile != 'affiliates' || $templatefile != 'supportticketsubmit-stepone'}
+	{if $templatefile != 'clientareahome' && $templatefile != 'downloads' && $templatefile != 'affiliates' && $templatefile != 'supportticketsubmit-stepone' && $templatefile != 'contact'}
 		<div class="navbar-collapse-inner">
 			<div class="navbar-collapse-bg"></div>
 			<div class="navbar-collapse-icon">
@@ -68,10 +68,16 @@
 				<i class="alico icon-list-close"></i>
 			</div>
 		</div>
-	    <div class="sub-menu">
-	        {include file="$template/includes/sidebar.tpl" sidebar=$primarySidebar}
-	    </div>
+        <div class="sub-menu">
+            {include file="$template/includes/sidebar.tpl" sidebar=$primarySidebar}
+        </div>
+
 	{/if}
-	    <div class="main-content">
+        {if $templatefile == 'contact'}
+            <div class="container">
+        {else}
+            <div class="main-content">
+        {/if}
+
 		<section id="main-body" class="content content--border">
 {/if}
