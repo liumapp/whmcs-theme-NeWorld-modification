@@ -388,23 +388,34 @@ var ShowMoeny = function() {
 	//    jQuery('.suffix').html('RMB');
     //}
 };
+
 var handlePackageSwitcher = function() {
     "use strict";
     var switcher = jQuery('.packages-switcher');
     switcher.on('click', function() {
+
         if (jQuery(this).hasClass('monthly')) {
             jQuery(this).removeClass('monthly');
             jQuery('.package').each(function() {
+                //价格
                 jQuery(this).find('.package-price > span').html($(this).find('.package-price').data('year'));
+
+                //域名
+                jQuery(this).find('.package-domain').html($(this).find('.package-domain').data('new'));
             });
         } else {
             jQuery(this).addClass('monthly');
             jQuery('.package').each(function() {
+                //价格
                 jQuery(this).find('.package-price > span').html($(this).find('.package-price').data('monthly'));
+
+                //域名
+                jQuery(this).find('.package-domain').html($(this).find('.package-domain').data('hot'));
             });
         }
     });
 };
+
 /**
  * Check all checkboxes with a given class.
  *
@@ -475,6 +486,7 @@ function popupWindow(addr, popname, w, h, features) {
     win = window.open(addr, popname, settings);
     win.window.focus();
 }
+
 /**
  * Add domain renewal to shopping cart.
  *
@@ -496,6 +508,7 @@ function addRenewalToCart(renewalID, selfThis) {
         }
     );
 }
+
 /**
  * Navigate to a page on dropdown change.
  *
@@ -508,6 +521,7 @@ function addRenewalToCart(renewalID, selfThis) {
 function selectChangeNavigate(select) {
     window.location.href = $(select).val();
 }
+
 /**
  * Append additional file upload input field.
  */
