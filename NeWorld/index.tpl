@@ -33,10 +33,10 @@
 								</span>
 									<small>&yen;</small>
 								</h4>
-								<p><strong>40G</strong> {$LANG.diskSpace}</p>
-								<p><strong>2G</strong> {$LANG.ram}</p>
-								<p><strong>1T</strong> {$LANG.bandwidth}</p>
-								<p><strong>15</strong> IPs</p>
+								{*<p><strong>40G</strong> {$LANG.diskSpace}</p>*}
+								{*<p><strong>2G</strong> {$LANG.ram}</p>*}
+								{*<p><strong>1T</strong> {$LANG.bandwidth}</p>*}
+								{*<p><strong>15</strong> IPs</p>*}
 							</div>
 							<div class="btm">
 								<a href="{$WEB_ROOT}/cart.php?a=add&domain=register" class="btn btn-border btn-block">{$LANG.getitnow}</a>
@@ -46,7 +46,6 @@
                 {/section}
 
 			</ul>
-			<p class="tos text-center">{$LANG.clikingiagree} <a href="{$WEB_ROOT}/tos/">{$LANG.ordertos}</a></p>
 		</div>
 	</div>
 </section>
@@ -55,70 +54,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-md-6">
-				<h2>Unlimited Bandwidth*</h2>
+				<h2>这里放一条横幅标语</h2>
 				<p>Yep, because like Cell Phone Overage Charges, Bandwidth Overage SUCK even more!</p>
 			</div>
-		</div>
-	</div>
-</section>
-
-<section class="home-features space2x">
-	<div class="container text-center">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<h2 class="title-head">What is NeWorld</h2>
-				<p class="desc">The easiest way to host, market, and measure your business videos, becouse see<br/>how cool and simple NeWorld is. Explore our app now.</p>
-			</div>
-		</div>
-		<div class="empty_space" style="height: 30px"></div>
-		<div class="row">
-			<div class="col-md-3 col-sm-6">
-				<div class="main">
-					<img class="theme-gray size-lg mb1 wow zoomIn" src="{$WEB_ROOT}/templates/{$template}/assets/img/icons/stroked/v2/icon-loadbalancers.svg" alt="">
-					<h3>Shadowsocks</h3>
-					<p>Bleeding edge techniques using Asynchronous I/O and Event-driven programming.</p>
-					<a href="#">{$LANG.learnmore} <i class="fa fa-caret-right"></i></a>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="main">
-					<img class="theme-gray size-lg mb1 wow zoomIn" src="{$WEB_ROOT}/templates/{$template}/assets/img/icons/stroked/v2/icon-volumes.svg" alt="">
-					<h3>Shared Hosting</h3>
-					<p>Bleeding edge techniques using Asynchronous I/O and Event-driven programming.</p>
-					<a href="#">{$LANG.learnmore} <i class="fa fa-caret-right"></i></a>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="main">
-					<img class="theme-gray size-lg mb1 wow zoomIn" src="{$WEB_ROOT}/templates/{$template}/assets/img/icons/stroked/v2/icon-firewall.svg" alt="">
-					<h3>VPS Hosting</h3>
-					<p>Bleeding edge techniques using Asynchronous I/O and Event-driven programming.</p>
-					<a href="#">{$LANG.learnmore} <i class="fa fa-caret-right"></i></a>
-				</div>
-			</div>
-			<div class="col-md-3 col-sm-6">
-				<div class="main">
-					<img class="theme-gray size-lg mb1 wow zoomIn" src="{$WEB_ROOT}/templates/{$template}/assets/img/icons/stroked/v2/drive.svg" alt="">
-					<h3>Dedicated Hosting</h3>
-					<p>Bleeding edge techniques using Asynchronous I/O and Event-driven programming.</p>
-					<a href="#">{$LANG.learnmore} <i class="fa fa-caret-right"></i></a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="home-clients space2x border-top">
-	<div class="container text-center">
-		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
-				<h2 class="title-head">Great Clients work with us</h2>
-				<p class="desc">The easiest way to host, market, and measure your business videos.</p>
-			</div>
-		</div>
-		<div class="empty_space" style="height: 30px"></div>
-		<div class="main">
-
 		</div>
 	</div>
 </section>
@@ -149,7 +87,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-				<h2>How much more will you save with NeWorld?</h2>
+				<h2>这里放一条横幅标语</h2>
 				<p>Our free calculator will show you in under 10 seconds how much you could be<br/>saving on your monthly hosying costs.</p>
 				<a href="#" class="btn btn-success">Calculate Your Savings</a>
 			</div>

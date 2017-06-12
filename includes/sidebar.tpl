@@ -1,4 +1,5 @@
 {foreach $sidebar as $item}
+
     <div menuItemName="{$item->getName()}" class="panel {if $item->getClass()}{$item->getClass()}{else}panel-default{/if}{if $item->getExtra('mobileSelect') and $item->hasChildren()} hidden-sm hidden-xs{/if}"{if $item->getAttribute('id')} id="{$item->getAttribute('id')}"{/if}>
         <div class="panel-heading">
             <h3 class="panel-title">
@@ -37,6 +38,7 @@
             </div>
         {/if}
     </div>
+
     {if $item->getExtra('mobileSelect') and $item->hasChildren()}
         {* Mobile Select only supports dropdown menus *}
         <div class="panel hidden-lg hidden-md {if $item->getClass()}{$item->getClass()}{else}panel-default{/if}"{if $item->getAttribute('id')} id="{$item->getAttribute('id')}"{/if}>
@@ -66,4 +68,5 @@
             {/if}
         </div>
     {/if}
+
 {/foreach}

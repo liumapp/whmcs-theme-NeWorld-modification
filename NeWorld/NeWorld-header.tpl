@@ -21,9 +21,9 @@
 	
 	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
 	                <ul class="nav navbar-nav navbar-right">
-	                    <li {if $templatefile == 'features'} class="active"{/if}>
-	                    	<a href="{$systemurl}features.php">{$LANG.features}</a>
-	                    </li>
+	                    {*<li {if $templatefile == 'features'} class="active"{/if}>*}
+	                    	{*<a href="{$systemurl}features.php">{$LANG.features}</a>*}
+	                    {*</li>*}
 	                    <li {if $templatefile == 'pricing'} class="active"{/if}>
 	                    	<a href="{$systemurl}pricing.php">{$LANG.pricing}</a>
 	                    </li>
@@ -85,7 +85,7 @@
 	{if $templatefile == 'homepage'}
 	    	<div class="home-slider space3x">
 		    	<div class="col-sm-6 col-md-5">
-		    		<h2 class="wow fadeInDown">See Our Simple Pricing,<br/>No Bandwidth Overages!</h2>
+		    		<h2 class="wow fadeInDown">放横幅标语<br/>标语</h2>
 		    		<p class="wow fadeInDown">Form early to enterprise, we've got you covered Starts with 14 days free. Annual payment earns you two months free!</p>
 		    	</div>
 				<div class="col-sm-9 col-md-8">
