@@ -21,26 +21,34 @@
         <input type="hidden" name="register" value="true"/>
 
         <div class="row">
-
             <div class="col-md-6">
-	            <div class="row">
-	                <div class="form-group col-xs-6">
-	                    <label for="lastname" class="control-label">{$LANG.clientarealastname}</label>
-	                    <input type="text" name="lastname" id="lastname" value="{$clientlastname}" class="form-control" {if !in_array('lastname', $optionalFields)}required{/if} tabindex="1" />
-	                </div>
-	                
-	                <div class="form-group col-xs-6">
-	                    <label for="firstname" class="control-label">{$LANG.clientareafirstname}</label>
-	                    <input type="text" name="firstname" id="firstname" value="{$clientfirstname}" class="form-control" {if !in_array('firstname', $optionalFields)}required{/if} tabindex="2" />
-	                </div>
-	            </div>
+	            {*<div class="row">*}
+	                {*<div class="form-group col-xs-6">*}
+	                    {*<label for="lastname" class="control-label">{$LANG.clientarealastname}</label>*}
+	                    {*<input type="text" name="lastname" id="lastname" value=" " class="form-control" {if !in_array('lastname', $optionalFields)}required{/if} tabindex="1" />*}
+	                {*</div>*}
+	                {**}
+	                {*<div class="form-group col-xs-6" style="display:none;">*}
+	                    {*<label for="firstname" class="control-label">{$LANG.clientareafirstname}</label>*}
+	                    {*<input type="text" name="firstname" id="firstname" value="{$clientfirstname}" class="form-control" {if !in_array('firstname', $optionalFields)}required{/if} tabindex="2" />*}
+	                {*</div>*}
+	            {*</div>*}
+                <div class="form-group">
+                    <label for="lastname" class="control-label">姓名</label>
+                    <input type="text" name="lastname" id="lastname" value="{$clientlastname}" class="form-control" {if !in_array('lastname', $optionalFields)}required{/if} tabindex="1" />
+                </div>
+
+                <div class="form-group col-xs-6" style="display:none;">
+                    <label for="firstname" class="control-label">{$LANG.clientareafirstname}</label>
+                    <input type="text" name="firstname" id="firstname" value="0631" class="form-control" {if !in_array('firstname', $optionalFields)}required{/if} tabindex="2" />
+                </div>
 
                 <div class="form-group">
                     <label for="email" class="control-label">{$LANG.clientareaemail}</label>
                     <input type="email" name="email" id="email" value="{$clientemail}" class="form-control"  tabindex="3" />
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" style="display:none;">
                     <label for="country" class="control-label">{$LANG.clientareacountry}</label>
                     <select id="country" name="country" class="form-control">
                         {foreach $clientcountries as $countryCode => $countryName}
@@ -51,9 +59,9 @@
                     </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group" style="display:none;">
                     <label for="state" class="control-label">{$LANG.clientareastate}</label>
-                    <input type="text" name="state" id="state" value="{$clientstate}" class="form-control" {if !in_array('state', $optionalFields)}required{/if} tabindex="5" />
+                    <input type="text" name="state" id="state" value="浙江" class="form-control" {if !in_array('state', $optionalFields)}required{/if} tabindex="5" />
                 </div>
 
                 <div class="form-group">
@@ -67,34 +75,7 @@
                     <span class="form-control-feedback glyphicon glyphicon-password"></span>
                     {include file="$template/includes/pwstrength.tpl"}
                 </div>
-            </div>
-            <div class="col-md-6">
 
-                <div class="form-group">
-                    <label for="companyname" class="control-label">{$LANG.clientareacompanyname}</label>
-                    <input type="text" name="companyname" id="companyname" value="{$clientcompanyname}" class="form-control" tabindex="7"/>
-                </div>
-
-                <div class="form-group">
-                    <label for="address1" class="control-label">{$LANG.clientareaaddress1}</label>
-                    <input type="text" name="address1" id="address1" value="{$clientaddress1}" class="form-control" {if !in_array('address1', $optionalFields)}required{/if} tabindex="8" />
-                </div>
-
-                <div class="form-group">
-                    <label for="address2" class="control-label">{$LANG.clientareaaddress2}</label>
-                    <input type="text" name="address2" id="address2" value="{$clientaddress2}" class="form-control" tabindex="9" />
-                </div>
-
-                <div class="form-group">
-                    <label for="city" class="control-label">{$LANG.clientareacity}</label>
-                    <input type="text" name="city" id="city" value="{$clientcity}" class="form-control" {if !in_array('city', $optionalFields)}required{/if} tabindex="10" />
-                </div>
-
-                <div class="form-group">
-                    <label for="postcode" class="control-label">{$LANG.clientareapostcode}</label>
-                    <input type="text" name="postcode" id="postcode" value="{$clientpostcode}" class="form-control" {if !in_array('postcode', $optionalFields)}required{/if} tabindex="11" />
-                </div>
-                
                 <div id="newPassword2" class="form-group has-feedback">
                     <label for="inputNewPassword2" class="control-label">{$LANG.clientareaconfirmpassword}</label>
                     <input type="password" class="form-control" id="inputNewPassword2" name="password2" autocomplete="off" tabindex="13" />
@@ -102,6 +83,35 @@
                     <div id="inputNewPassword2Msg">
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6">
+
+                <div class="form-group" style="display:none;">
+                    <label for="companyname" class="control-label">{$LANG.clientareacompanyname}</label>
+                    <input type="text" name="companyname" id="companyname" value="{$clientcompanyname}" class="form-control" tabindex="7"/>
+                </div>
+
+                <div class="form-group" style="display:none;">
+                    <label for="address1" class="control-label">{$LANG.clientareaaddress1}</label>
+                    <input type="text" name="address1" id="address1" value="China" class="form-control" {if !in_array('address1', $optionalFields)}required{/if} tabindex="8" />
+                </div>
+
+                <div class="form-group" style="display:none;">
+                    <label for="address2" class="control-label">{$LANG.clientareaaddress2}</label>
+                    <input type="text" name="address2" id="address2" value="{$clientaddress2}" class="form-control" tabindex="9" />
+                </div>
+
+                <div class="form-group" style="display:none;">
+                    <label for="city" class="control-label">{$LANG.clientareacity}</label>
+                    <input type="text" name="city" id="city" value="杭州" class="form-control" {if !in_array('city', $optionalFields)}required{/if} tabindex="10" />
+                </div>
+
+                <div class="form-group" style="display:none;">
+                    <label for="postcode" class="control-label">{$LANG.clientareapostcode}</label>
+                    <input type="text" name="postcode" id="postcode" value="310000" class="form-control" {if !in_array('postcode', $optionalFields)}required{/if} tabindex="11" />
+                </div>
+                
+
 
                 {if $customfields}
                     {foreach from=$customfields key=num item=customfield}
@@ -160,10 +170,12 @@
                 </label>
             </div>
         {/if}
-
-        <div class="form-group text-center">
-            <input class="btn btn-large btn-primary btn-block" type="submit" value="{$LANG.clientregistertitle}"/>
+        <div class="row">
+            <div class="form-group text-center col-md-6">
+                <input class="btn btn-large btn-primary btn-block" type="submit" value="{$LANG.clientregistertitle}"/>
+            </div>
         </div>
+
 
     </form>
 </div>

@@ -1,3 +1,5 @@
+<div class="wrapper">
+
 <header>
 	{if $templatefile == 'homepage'}<div class="wave-wrap">{/if}
 	    <div class="container">
@@ -16,7 +18,7 @@
 				</button>
 
 	            <div class="navbar-header">
-	                <a class="navbar-brand" href="{$systemurl}">{$companyname}</a>
+	                <a class="navbar-brand" href="{$systemurl}"><img src="{$systemurl}templates/NeWorld/assets/img/homeLogo.png"></a>
 	            </div><!-- Collect the nav links, forms, and other content for toggling -->
 	
 	            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse">
@@ -85,8 +87,8 @@
 	{if $templatefile == 'homepage'}
 	    	<div class="home-slider space3x">
 		    	<div class="col-sm-6 col-md-5">
-		    		<h2 class="wow fadeInDown">放横幅标语<br/>标语</h2>
-		    		<p class="wow fadeInDown">Form early to enterprise, we've got you covered Starts with 14 days free. Annual payment earns you two months free!</p>
+		    		<h1 class="wow fadeInDown">.com</h1>
+					<h2 class="wow fadeInDown">一个.com，无数种可能</h2>
 		    	</div>
 				<div class="col-sm-9 col-md-8">
 					<form method="post" action="domainchecker.php">

@@ -155,7 +155,7 @@
         <div class="col-sm-6">
 
             {function name=outputHomePanels}
-                <div menuItemName="{$item->getName()}" class="panel panel-default"{if $item->getAttribute('id')} id="{$item->getAttribute('id')}"{/if}>
+                <div menuItemName="{$item->getName()}" {if $item->getName() eq "Active Products/Services"}style="display:none;"{/if} class="panel panel-default"{if $item->getAttribute('id')} id="{$item->getAttribute('id')}"{/if}>
                     <div class="panel-heading">
                         <h3 class="panel-title">
                             {if $item->getExtra('btn-link') && $item->getExtra('btn-text')}

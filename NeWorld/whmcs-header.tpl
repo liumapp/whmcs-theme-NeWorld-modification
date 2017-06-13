@@ -36,16 +36,6 @@
 			            </ul>
 			        </li>
 			        {/if}
-			        <li class="item {if $templatefile == 'clientareaproducts' || $templatefile == 'clientareaproductdetails'} active{/if}">
-			            <a href="javascript:;"><i class="alico icon-ecs"></i>{$LANG.navservices}<span class="fa fa-caret-down"></span></a>
-			            <ul>
-							{if $loggedin}
-			                <li><a href="clientarea.php?action=services">{$LANG.clientareanavservices}</a></li>
-			                {/if}
-			                <li><a href="cart.php">{$LANG.navservicesorder}</a></li>
-			                <li><a href="cart.php?gid=addons">{$LANG.clientareaviewaddons}</a></li>
-			            </ul>
-			        </li>
 					{if $loggedin}
 			        <li class="item {if $templatefile == 'clientareainvoices' || $templatefile == 'clientareaquotes' || $templatefile == 'clientareacreditcard' || $templatefile == 'clientareaaddfunds' || $templatefile == 'masspay'} active{/if}">
 			            <a href="javascript:;"><i class="alico icon-expense"></i>{$LANG.navbilling}<span class="fa fa-caret-down"></span></a>

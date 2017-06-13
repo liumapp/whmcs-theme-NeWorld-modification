@@ -3,10 +3,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
-				<h2 class="title-head">Select a Plan To Start Your Free Trial</h2>
-				<p class="desc">Form early to enterprise, we've got you covered Starts with 14 days free. Annual payment earns you two months free!</p>
+				<h2 class="title-head">选择您喜欢的域名</h2>
+				<p class="desc">我们通过最热门和最新上线的两种域名来对您进行推荐</p>
 			</div>
 		</div>
+		<br>
 		<div class="empty_space" style="height: 30px"></div>
 		<div class="pricing">
 			<ul class="nav nav-tabs packages-switcher monthly" role="tablist">
@@ -54,8 +55,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 col-md-6">
-				<h2>这里放一条横幅标语</h2>
-				<p>Yep, because like Cell Phone Overage Charges, Bandwidth Overage SUCK even more!</p>
+				<h2>购买流程</h2>
+				<p>先选择域名，再付款，再等待审核，审核通过后就可以进行域名解析啦！</p>
 			</div>
 		</div>
 	</div>
@@ -65,8 +66,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1 text-center">
-				<h2 class="title-head">Questions and answers</h2>
-				<p class="desc">Our support team work hard to make your life simplier. Feel free to <a href="{$WEB_ROOT}/contact.php">{$LANG.contacttitle}</a></p>
+				<h2 class="title-head">常见问题</h2>
+				<p class="desc">我们的客服MM每个工作日的9:00-17:30分为您提供便捷的<a href="{$WEB_ROOT}/contact.php">{$LANG.contacttitle}</a></p>
 			</div>
 		</div>
 		<div class="empty_space" style="height: 30px"></div>
@@ -87,9 +88,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
-				<h2>这里放一条横幅标语</h2>
-				<p>Our free calculator will show you in under 10 seconds how much you could be<br/>saving on your monthly hosying costs.</p>
-				<a href="#" class="btn btn-success">Calculate Your Savings</a>
+				<h2>关于我们</h2>
+				<p>这里放介绍我们团队及公司文化的文字<br/>一般分两行写，同时下面的查看按钮一般跳转到关于我们的详细页面上。</p>
+				<a href="#" class="btn btn-success">查看</a>
 			</div>
 		</div>
 	</div>

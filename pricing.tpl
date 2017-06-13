@@ -10,10 +10,10 @@
 				</tr>
 			</thead>
 			<tbody>
-				{section name=sec1 loop=$domains}
+				{section name=sec1 loop=$lmdomains}
 					<tr>
-						<td>{$domains[sec1]->extension}</td>
-						<td><h5 class="price"><span class="yen">¥</span>{$domainsMoney[sec1]->msetupfee}<small>／年</small></h5></td>
+						<td>{$lmdomains[sec1]->extension}</td>
+						<td><h5 class="price"><span class="yen">¥</span>{$lmdomainsMoney[sec1]->msetupfee}<small>／年</small></h5></td>
 						<td><a href="{$WEB_ROOT}/cart.php?a=add&domain=register" class="btn btn-success">立即购买</a></td>
 					</tr>
 				{/section}

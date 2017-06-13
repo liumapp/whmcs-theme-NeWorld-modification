@@ -51,6 +51,7 @@ body.nowhmcs p {
 	background-color: #f4f5f9;
 	border-radius: 4px 4px 0 0;
 }
+
 .container-bd {
 	padding: 50px;
 }
@@ -190,8 +191,8 @@ body.nowhmcs p {
     color: #FFF !important;
     height: auto;
     font-size: 26px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
     padding-left: 10px;
 }
 .nav-home .navbar-nav {
@@ -321,10 +322,10 @@ body.nowhmcs p {
 
 .home-slider {
 	color: #FFF;
-    background-size: 400px;
+    background-size: 300px;
     background-repeat: no-repeat;
     background-position: center right;
-    background-image: url(../img/slider-bg.png);
+    background-image: url(../img/sandglass.png);
 }
 .home-slider:after {
 	content: '';
@@ -575,7 +576,7 @@ body.nowhmcs p {
 	background-color: #14A7DB;
 }
 .slider-1 .container {
-	background-image: url('../img/slider-1.png');
+	background-image: url('../img/stepTogether.png');
 	background-size: 50%;
 	background-position: center right;
 	background-repeat: no-repeat;

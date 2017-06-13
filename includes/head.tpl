@@ -10,9 +10,9 @@
 <script src="{$BASE_PATH_JS}/jquery.min.js"></script>
 
 <!-- Custom Styling -->
-<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/custom.css?v0.3.0">
+<link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/custom.css?v0.3.8">
 <link rel="stylesheet" href="{$WEB_ROOT}/templates/{$template}/assets/css/color.css?v0.3.0">
-
+<link rel="shortcut icon" href="{$WEB_ROOT}/templates/{$template}/assets/img/littlePic.png" type="image/x-icon">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>

@@ -2,4 +2,23 @@
 @import url('animate.css');
 @import url('common.css');
 @import url('NeWorld.css');
-@import url('noworldmodification.css');
+
+.lmfooter {
+    background-color:rgba(60 , 60 , 60 , 0.15);
+}
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    margin: 0 auto -200px;
+    padding: 0 0 200px;
+}
+
+
+h1.fadeInDown  ,
+h2.fadeInDown {
+    font-weight: bold;
+}
+
+
+
