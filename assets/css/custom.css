@@ -20,5 +20,11 @@ h2.fadeInDown {
     font-weight: bold;
 }
 
+h1.fadeInDown {
+    font-size:3.5em;
+}
+h2.fadeInDown {
+    padding-bottom:5px;
+}
 
 
