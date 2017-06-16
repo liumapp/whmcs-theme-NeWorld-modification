@@ -132,3 +132,23 @@
 	</div>
 </section>
 {/if}
+
+<div class="contact-window">
+	<div id="leftsead">
+		<ul>
+			<li>
+				<a target="_blank" href="tencent://message/?uin=2188298810&Menu=yes"">
+					<img src="http://assets.huluwa.cc/fangxin/dist/images/qq2.png" class="hides" style="width: 166px;height: 50px;display: none;">
+					<img src="http://assets.huluwa.cc/fangxin/dist/images/right-qq1.png" class="shows" style="width:50px;height:50px;">
+				</a>
+			</li>
+			<li>
+				<a id="top_btn" style="display: none">
+					<img src="http://assets.huluwa.cc/fangxin/dist/images/right-top1.png" onclick="Util.goTop()" style="width: 50px;height: 50px">
+				</a >
+			</li>
+		</ul>
+	</div>
+</div>
+
+

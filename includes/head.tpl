@@ -34,3 +34,5 @@
 {if $templatefile == "viewticket" && !$loggedin}
   <meta name="robots" content="noindex" />
 {/if}
+
+<script src="{$WEB_ROOT}/templates/{$template}/assets/js/customer.js"></script>

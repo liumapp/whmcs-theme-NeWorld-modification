@@ -27,4 +27,32 @@ h2.fadeInDown {
     padding-bottom:5px;
 }
 
+.contact-window ul {
+    list-style: none;
+    padding: 0 15px;
+    text-align: left;
+}
+#leftsead li {
+    list-style: none;
+    width: 131px;
+    height: 53px;
+}
+.contact-window ul li {
+    line-height: 75px;
+    font-size: 18px;
+    color: white;
+}
+#leftsead {
+    width: 131px;
+    height: 143px;
+    position: fixed;
+    bottom: 50%;
+    right: 15px;
+    z-index: 1000;
+}
+#leftsead li img {
+    float: right;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
 
