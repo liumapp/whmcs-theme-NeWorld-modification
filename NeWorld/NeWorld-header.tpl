@@ -109,6 +109,9 @@
 						</div>
 					</form>
 				</div>
+				<div class="lRight">
+					<div class="lpic"></div>
+				</div>
 	    	</div>
 	{/if}
 

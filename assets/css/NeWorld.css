@@ -325,7 +325,9 @@ body.nowhmcs p {
     background-size: 300px;
     background-repeat: no-repeat;
     background-position: center right;
-    background-image: url(../img/sandglass.png);
+    /*background-image: url(../img/ball.png);*/
+    z-index:10;
+    position: relative;
 }
 .home-slider:after {
 	content: '';

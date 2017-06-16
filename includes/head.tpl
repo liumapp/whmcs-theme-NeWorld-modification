@@ -35,4 +35,4 @@
   <meta name="robots" content="noindex" />
 {/if}
 
-<script src="{$WEB_ROOT}/templates/{$template}/assets/js/customer.js"></script>
+<script src="{$WEB_ROOT}/templates/{$template}/assets/js/customer.js?v0.0.3"></script>
