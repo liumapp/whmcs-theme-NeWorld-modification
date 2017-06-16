@@ -106,7 +106,7 @@
                 {$reply.date}
             </div>
             <div class="user">
-                <img width="50" height="50" src="https://secure.gravatar.com/avatar/{$reply.email|md5}?d={$systemurl}templates/{$template}/assets/img/default_family.jpg&amp;s=100" alt="" />
+                <img width="50" height="50" src="{$systemurl}templates/{$template}/assets/img/default_family.jpg" alt="" />
                 <span class="name">
                     {$reply.name}
                 </span>

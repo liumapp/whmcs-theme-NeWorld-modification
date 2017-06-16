@@ -85,34 +85,34 @@
 	    	</nav>
 
 	{if $templatefile == 'homepage'}
-	    	<div class="home-slider space3x">
-		    	<div class="col-sm-6 col-md-5">
-		    		<h1 class="wow fadeInDown">.com</h1>
-					<h2 class="wow fadeInDown">一个.com，无数种可能</h2>
-		    	</div>
-				<div class="col-sm-9 col-md-8">
-					<form method="post" action="domainchecker.php">
-						<div class="row">
-							<div class="col-md-10  col-sm-10">
-								<div class="input-group input-group-lg">
-									<input type="text" class="form-control" name="domain" placeholder="{$LANG.exampledomain}" autocapitalize="none" />
-									<span class="input-group-btn">
-										{if $registerdomainenabled}
-											<input type="submit" class="btn btn-warning" value="{$LANG.search}" />
-                                        {/if}
-                                        {if $transferdomainenabled}
-											<input type="submit" name="transfer" class="btn btn-info" value="{$LANG.domainstransfer}" />
-                                        {/if}
-                                	</span>
-								</div>
+		<div class="home-slider space3x">
+			<div class="col-sm-6 col-md-5">
+				<h1 class="wow fadeInDown">.com</h1>
+				<h2 class="wow fadeInDown">一个.com，无数种可能</h2>
+			</div>
+			<div class="col-sm-9 col-md-8">
+				<form method="post" action="domainchecker.php">
+					<div class="row">
+						<div class="col-md-10  col-sm-10">
+							<div class="input-group input-group-lg">
+								<input type="text" class="form-control" name="domain" placeholder="{$LANG.exampledomain}" autocapitalize="none" />
+								<span class="input-group-btn">
+									{if $registerdomainenabled}
+										<input type="submit" class="btn btn-warning" value="{$LANG.search}" />
+									{/if}
+									{if $transferdomainenabled}
+										<input type="submit" name="transfer" class="btn btn-info" value="{$LANG.domainstransfer}" />
+									{/if}
+								</span>
 							</div>
 						</div>
-					</form>
-				</div>
-				<div class="lRight">
-					<div class="lpic"></div>
-				</div>
-	    	</div>
+					</div>
+				</form>
+			</div>
+			<div class="lRight">
+				<div class="lpic"></div>
+			</div>
+		</div>
 	{/if}
 
 	    </div><!-- /.container -->
