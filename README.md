@@ -11,7 +11,9 @@ A whmcs theme , which source coming from NeWorld .
 
 * 将lang目录下的admin和frontend两个文件夹的语言包，分别拷贝到系统的后台和前台语言包内
 
-* 删除rootPath、lang、orderforms三个目录
+* 将fronthook目录下面的AddQA.php文件拷贝到根目录下面的includes/hooks/下面
+
+* 删除rootPath、lang、orderforms、fronthook三个目录
 
 * 后台进行配置，选择NeWorld
 
